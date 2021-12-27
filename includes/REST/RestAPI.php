@@ -99,6 +99,8 @@ final class NF_SubmissionsRestEndpoint_REST_RestAPI{
                     
                 }
 
+                $sub_objects[$sub_index]['user_id'] = $sub->post_author;
+                $sub_objects[$sub_index]['post_id'] = $sub->ID;
                 $sub_objects[$sub_index]['submission_date'] = $sub->post_date;
             }           
         }
